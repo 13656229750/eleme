@@ -1,0 +1,253 @@
+[{
+    "id": 1,
+    "logo": "static/img/seller/dicos.png",
+    "name": "德克士",
+    "rating": 4.6,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 2,
+    "logo": "static/img/seller/coco.webp",
+    "name": "COCO(小寨赛格店)",
+    "rating": 4,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 3,
+    "logo": "static/img/seller/wanzaimatou.png",
+    "name": "湾仔码头饺子馆（长安中路店）",
+    "rating": 3,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 4,
+    "logo": "static/img/seller/dawanluroufan.webp",
+    "name": "大碗卤肉饭（小寨店）",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 5,
+    "logo": "static/img/seller/bamugou_xiaozhai.webp",
+    "name": "缘味正香岐山八亩沟擀面皮（小寨店）",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 6,
+    "logo": "static/img/seller/bamugou.jpeg",
+    "name": "八亩沟擀面皮（草场坡店）",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 7,
+    "logo": "static/img/seller/invege.webp",
+    "name": "invege有蔬 • 轻食 • 便当料理（西安一店）",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 8,
+    "logo": "static/img/seller/xiyu.webp",
+    "name": "囍鱼谣酸菜鱼by麻饭（长安中路店）",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 9,
+    "logo": "static/img/seller/lilaosi.jpeg",
+    "name": "李老四腊牛肉夹馍",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 10,
+    "logo": "static/img/seller/chuanxiangcai.webp",
+    "name": "湘鉴恨晚川湘菜",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 11,
+    "logo": "static/img/seller/shaochengchunqiu.png",
+    "name": "少城春秋•川湘菜（花园餐厅店）",
+    "rating": 4.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 12,
+    "logo": "static/img/seller/waipo.jpeg",
+    "name": "外婆印象（含光店）",
+    "rating": 5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 13,
+    "logo": "static/img/seller/black.jpeg",
+    "name": "黑泷堂（电子正街店）",
+    "rating": 2.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  },
+  {
+    "id": 14,
+    "logo": "static/img/seller/xiaoxianzhou.webp",
+    "name": "稻童小鲜粥（长安中路店）",
+    "rating": 2.5,
+    "orderNo": 3000,
+    "sendFee": 20,
+    "deliveryFee": 10,
+    "avgFee": 2,
+    "discount": [{
+      "icon": "bao",
+      "content": "吃100送300"
+    },{
+      "icon": "gift",
+      "content": "吃100送300"
+    }],
+    "count": 0
+  }
+]
