@@ -5,25 +5,20 @@
 import BMap from 'BMap'
 export default {
   data () {
-    return {
-      location: '定位'
-    }
+    return {location: '定位中...'}
   },
   created () {
-    // 获取详细地址
-    var geolocation = new BMap.Geolocation()
+    const geolocation = new BMap.Geolocation()
     geolocation.getCurrentPosition((r) => {
-      var p = new BMap.Point(r.point.lng, r.point.lat)
-      var myGeo = new BMap.Geocoder()
-      myGeo.getLocation(p, (res) => {
-        if (res) {
-          this.location = res.address
-        }
+      const point = new BMap.Point(r.point.lng, r.point.lat)
+      const myGeo = new BMap.Geocoder()
+      myGeo.getLocation(point, (result) => {
+        this.location = result.address
       })
     })
   }
 }
 </script>
-<style scoped lang='stylus'>
+<style lang="stylus" scoped>
 
 </style>

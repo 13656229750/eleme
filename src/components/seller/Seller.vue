@@ -1,7 +1,7 @@
 <template>
   <div class="seller">
         <Top :seller='seller'></Top>
-        <GoodsList :products="products" :shopcartData="shopcartData"></GoodsList>
+        <GoodsList :products="products" :shopcartData="shopcartData" @sub='sub' @plus='plus'></GoodsList>
         <Shop-cart :shopcartData="shopcartData" @sub='sub' @plus='plus'></Shop-cart>
   </div>
 </template>
@@ -11,13 +11,12 @@ import ShopCart from './shopCart/shopCart'
 import GoodsList from './goodsList/GoodsList'
 import {GOODS} from '@/api'
 import * as type from '@/store/mutation-type'
-import {mapGetters} from 'vuex'
+// import {mapGetters} from 'vuex'
 export default {
   data () {
     return {
       showCart: true,
-      products: [],
-      shopcartData: []
+      products: []
     }
   },
   created () {
@@ -32,14 +31,17 @@ export default {
       this.products = arr[0]
     })
     // 根据当前商家id，从购物车去除商家的商品
-    this.getShopCart(this.shopcart)
+    // this.getShopCart(this.shopcart)
   },
   computed: {
     seller () {
       document.title = this.$store.getters.seller.name
       return this.$store.getters.seller
     },
-    ...mapGetters(['shopcart'])
+    shopcartData () {
+    // shopcart里面是所有商家信息，需要过滤
+      return this.$store.getters.shopcart[this.seller.id] || []
+    }
   },
   components: {
     Top,
@@ -52,15 +54,11 @@ export default {
   },
   methods: {
     getGoods () {},
-    getShopCart (shopcart) {
-    // shopcart里面是所有商家信息，需要过滤
-      this.shopcartData = shopcart[this.seller.id] || []
-    },
     sub (product) {
-      this.$store.commit(type.DEL_SHOPCART, {sellerId:this.seller.id, goods: product})
+      this.$store.commit(type.DEL_SHOPCART, {sellerId: this.seller.id, goods: product})
     },
     plus (product) {
-      this.$store.commit(type.ADD_SHOPCART, {sellerId:this.seller.id, goods: product})
+      this.$store.commit(type.ADD_SHOPCART, {sellerId: this.seller.id, goods: product})
     }
   }
 }

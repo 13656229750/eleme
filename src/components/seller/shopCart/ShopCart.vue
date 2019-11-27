@@ -12,7 +12,6 @@
           <div class="clear">
             <i class="icon-take icon-gouwuche"></i>
             <span>清空</span>
-
           </div>
         </div>
         <ul class="goods-list">
@@ -67,7 +66,7 @@ export default {
   data () {
     return {
       showList: true,
-      slideHeight: null,
+      slideHeight: 250,
       box: 5
     }
   },
@@ -75,7 +74,7 @@ export default {
     totalMoney () {
       let sun = 0
       this.shopcartData.forEach((v) => {
-        sun += v.price*v.count
+        sun += v.price * v.count
       })
       sun += this.box
       return sun

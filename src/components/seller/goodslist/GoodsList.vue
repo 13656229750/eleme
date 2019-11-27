@@ -93,7 +93,20 @@ export default {
     },
     loadGoods () {
       const that = this
-      this  
+      this.products.types.forEach(pro => {
+        pro.goods.forEach(food => {
+          let cart = that.shopcartData.find(d => food.name === d.title)
+          that.$set(food, 'count', cart ? cart.count : 0)
+        })
+      })
+    },
+    sub (product) {
+      const {name, price} = product
+      this.$emit('sub', {title: name, price, count: 1})
+    },
+    plus (product) {
+      const {name, price} = product
+      this.$emit('plus', {title: name, price, count: 1})
     }
   },
   updated () {
@@ -101,9 +114,6 @@ export default {
       let lastHight = this.cateItemsHeight[this.cateItemsHeight.length - 1]
       this.cateItemsHeight.push(item.offsetHeight + lastHight)
     })
-  },
-  sub () {
-
   }
 }
 </script>
