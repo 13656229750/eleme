@@ -2,9 +2,6 @@
   <div class="box">
     <div id="shoplist-title" class="shoplist-title">推荐商家</div>
     <!-- 加载中 -->
-    <!-- <div v-for="load in 10" :key="load"  v-show="!sellerList || sellerList.length==0" class="skeleton">
-      <skeleton class="skeleton"></skeleton>
-    </div> -->
     <div v-if='sellerList.length == 0'>
     <Loading></Loading>
     </div>

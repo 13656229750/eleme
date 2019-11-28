@@ -8,16 +8,19 @@ import 'lib-flexible'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'mint-ui/lib/style.css'
-import MintUI from 'mint-ui'
+import MintUI, { Header, Field } from 'mint-ui'
 
 import './assets/css/index.css'
 import './assets/css/normalize.css'
+import '../static/css/index1.css'
 import '@/filter'
 Vue.config.productionTip = false
 fastclick.attach(document.body)// body内所有click 300毫秒延迟都将去掉
 Vue.prototype.$http = axios
 Vue.use(ElementUI)
 Vue.use(MintUI)
+Vue.component(Header.name, Header)
+Vue.component(Field.name, Field)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -41,5 +41,8 @@ export default {
       }
     }
     sessionStorage.setItem('shopcart', JSON.stringify(state.shopcart))
+  },
+  addadress (state, obj) {
+    state.address.push(obj)
   }
 }

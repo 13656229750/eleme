@@ -45,11 +45,37 @@ const router = new Router({
           }
         }
       ]
-    }, {
+    },
+    {
       path: '/seller',
       name: 'Seller',
       component: () => import('@/components/seller/Seller')
+    },
+    {
+      path: '/adress',
+      name: 'Adress',
+      component: () => import('@/components/home/mine/Adress.vue'),
+      meta: {
+        title: '收货地址'
+      }
+    },
+    {
+      path: '/newadress',
+      component: () => import('@/components/home/mine/Newadress.vue'),
+      name: 'Newadress',
+      meta: {
+        title: '新增收货地址'
+      }
+    },
+    {
+      path: '/coupon',
+      component: () => import('@/components/home/mine/Coupon.vue'),
+      name: 'Coupon',
+      meta: {
+        title: '优惠券'
+      }
     }
+
   ]
 })
 router.beforeEach((to, from, next) => {

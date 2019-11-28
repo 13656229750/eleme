@@ -104,7 +104,7 @@ export default {
 .h{
   width  100%
   height 1.333333rem /* 100/75 */
-  background blue
+  background #00a6ff
   text-align center
   line-height 1.333333rem /* 100/75 */
   font-size .4rem /* 30/75 */

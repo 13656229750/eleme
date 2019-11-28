@@ -26,7 +26,7 @@
         </p>
         <p class="text">钱包</p>
       </div>
-      <div class="cell">
+      <div class="cell" @click='coupon'>
         <p class="number">{{user.coupon.length}}
           <span class="unit">个</span>
         </p>
@@ -44,9 +44,9 @@
     </div>
     <ul class="list">
       <li class="item">
-        <a href="">
+        <a href="#">
           <i class="icon icon-blue icon-take icon-weizhi"></i>
-          <span class="title">收货地址</span>
+          <span class="title" @click='adress'>收货地址</span>
         </a>
       </li>
       <li class="item">
@@ -118,11 +118,24 @@
 </template>
 <script>
 import {mapGetters} from 'vuex'
+import Adress from '@/components/home/mine/Adress.vue'
+import Coupon from '@/components/home/mine/Coupon.vue'
 export default {
   name: 'Mine',
   computed: mapGetters([
     'user'
-  ])
+  ]),
+  components: {
+    Adress, Coupon
+  },
+  methods: {
+    adress () {
+      this.$router.push({name: 'Adress'})
+    },
+    coupon () {
+      this.$router.push({name: 'Coupon'})
+    }
+  }
 }
 </script>
 <style lang="stylus" scoped>

@@ -7,5 +7,8 @@ export default {
   },
   shopcart (state) {
     return state.shopcart
+  },
+  address (state) {
+    return state.address
   }
 }

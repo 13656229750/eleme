@@ -61,7 +61,7 @@ export default {
 .clearfix{clear:both}
     .order{
         .title{
-            width:100%;height:1.6rem;line-height:1.6rem; font-size:0.4rem; color:#fff;background:#00a6ff
+            width:100%;height 1.333333rem /* 100/75 */;line-height:1.6rem; font-size:0.4rem; color:#fff;background:#00a6ff
             span:nth-child(1){
                 text-align:left
                 float:left

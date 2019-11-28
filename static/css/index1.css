@@ -1,0 +1,15 @@
+.mint-field-core {
+  font-size: .36rem;
+  line-height: 1.3rem;
+  height: 1.2rem;
+    }
+    
+.mint-field .mint-cell-title{
+  width: 155px;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  font-size: .36rem;
+}
+.add-address{width:70%;margin:auto;margin-left:15%;margin-top:2rem; height:1.1rem;line-height:1.1rem; font-size:.48rem;color:#fff;text-align:center; background-color: #26a2ff;border:none; border-radius:15px
+}
